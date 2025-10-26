@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.1">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;BotBridgeOps Demo – AI-powered IT Health Optimization&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="description" content="Interactive demo of BotBridgeOps: agentic AI-powered incident management, ticket triage, and change management."&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-family: 'Inter', sans-serif; background: #0a0f1e; color: #f7fafc; margin:0; padding:0;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.demo-wrapper {max-width:900px; margin:0 auto; padding:44px 18px;}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.demo-header {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-align:center; margin-bottom:30px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.demo-header h1 {font-size:2rem;margin:0 0 5px 0;}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.demo-header p {color:#c4d0e3;font-size:1.15em;}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.card-grid {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: grid; gap: 26px; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-top:32px; margin-bottom:38px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.card {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background:#181e34; border-radius:11px; box-shadow:0 2px 12px #0002;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding:26px 20px; text-align:left; border:1px solid #212547;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display:flex;flex-direction:column;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.card-icon {font-size:2.1em;margin-bottom:11px;}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.card-title {font-size:1.08em;font-weight:600;margin-bottom:7px;}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.card-desc {color:#c4d0e3;font-size:1em;flex:1;}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.card-table {margin-top:22px;border-collapse:collapse;width:100%;font-size:.98em;}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.card-table th,.card-table td {border:1px solid #212547;padding:7px;}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.card-table th {background:#151b29;}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* RCA flow */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.rca-flow {margin:24px 0 0 0;background:#151b29;padding:16px;border-radius:12px;}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.rca-title {font-size:1.07em;color:#20B2AA;font-weight:600;}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.rca-step {margin:9px 0; color:#c4d0e3;}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.approval-btn {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin:16px 0 0 0;padding:10px 28px;background:#20B2AA;color:#fff;border-radius:7px;font-weight:600;border:none;cursor:pointer;transition:.2s;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.approval-btn:hover{background:#178177;}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Footer link */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.footer-link{text-align:center;margin:42px 0 0 0;}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.footer-link a{color:#20B2AA;font-size:1.07em;}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p1">&lt;div class="demo-wrapper"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="demo-header"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h1&gt;BotBridgeOps Interactive Demo&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>Experience agentic AI for IT operations.&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>Below are simulated screens for incident management, ticket triage, and change management modules. All data is for demo purposes.</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="card-grid"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="card-icon"&gt;🚨&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="card-title"&gt;Incident Management&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="card-desc"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;b&gt;Live Sample:&lt;/b&gt; Major Incident #MI-9482&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span style="color:#21e672"&gt;Impact: ServiceNow Integration Failure&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;li&gt;Reported: 10:03 AM&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;li&gt;Status: &lt;span style="color:#ffbd3c"&gt;Open – AI RCA in progress&lt;/span&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;li&gt;Users affected: 214&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="rca-flow"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="rca-title"&gt;AI RCA Suggestion&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="rca-step"&gt;1. Detected spike in API errors at 09:58 AM across 2 endpoints.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="rca-step"&gt;2. Correlated recent change (#CH-2731) – update rolled out to API gateway.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="rca-step"&gt;3. Recommended rollback of API gateway change.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="rca-step"&gt;&lt;b&gt;Resolution Action:&lt;/b&gt; &lt;button class="approval-btn"&gt;Approve Rollback&lt;/button&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="card-icon"&gt;🎫&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="card-title"&gt;Ticket Triage &amp; Automation&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="card-desc"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;b&gt;Recent Query:&lt;/b&gt; "Unable to access Jira dashboard"&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span style="color:#21e672"&gt;AI auto-classified as 'Access Issue'&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;li&gt;Auto-Routed: IT Ops&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;li&gt;Suggested Knowledge Base: KB-1287 (How to reset Jira access)&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;li&gt;Auto-closure rate: 83% (last 30 days)&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;table class="card-table"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;tr&gt;&lt;th&gt;Ticket ID&lt;/th&gt;&lt;th&gt;Category&lt;/th&gt;&lt;th&gt;Status&lt;/th&gt;&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;tr&gt;&lt;td&gt;SR-11223&lt;/td&gt;&lt;td&gt;Password Reset&lt;/td&gt;&lt;td style="color:#21e672"&gt;Closed (Auto)&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;tr&gt;&lt;td&gt;SR-11298&lt;/td&gt;&lt;td&gt;Dashboard Access&lt;/td&gt;&lt;td style="color:#21e672"&gt;Closed (KB)&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;tr&gt;&lt;td&gt;SR-11305&lt;/td&gt;&lt;td&gt;Sync Issue&lt;/td&gt;&lt;td style="color:#ffbd3c"&gt;Pending&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/table&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="card-icon"&gt;🔄&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="card-title"&gt;Change Management&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="card-desc"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;b&gt;Upcoming Change:&lt;/b&gt; #CH-2741&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span style="color:#21e672"&gt;Scope: Database upgrade (Finance App)&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;li&gt;Risk Score: High&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;li&gt;Automated CAB minutes generated&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;li&gt;Recommended window: 2 AM - 3 AM Sunday&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;table class="card-table"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;tr&gt;&lt;th&gt;Change ID&lt;/th&gt;&lt;th&gt;Summary&lt;/th&gt;&lt;th&gt;Status&lt;/th&gt;&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;tr&gt;&lt;td&gt;CH-2734&lt;/td&gt;&lt;td&gt;API Gateway Update&lt;/td&gt;&lt;td style="color:#ffbd3c"&gt;Rolled Back&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;tr&gt;&lt;td&gt;CH-2741&lt;/td&gt;&lt;td&gt;DB Upgrade&lt;/td&gt;&lt;td style="color:#1dafff"&gt;Scheduled&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;tr&gt;&lt;td&gt;CH-2720&lt;/td&gt;&lt;td&gt;Asset Sync&lt;/td&gt;&lt;td style="color:#21e672"&gt;Completed&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/table&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="footer-link"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;a href="index.html"&gt;&amp;larr; Back to Home&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
