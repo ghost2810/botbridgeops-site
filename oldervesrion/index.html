@@ -1,0 +1,282 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.1">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;BotBridgeOps – Your Tools, Our Intelligence&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="description"</p>
+<p class="p1"><span class="Apple-converted-space">        </span>content="BotBridgeOps: AI-powered IT health optimization for your existing tools. Integrate, automate, and achieve more."&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>:root {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--primary: #20B2AA;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--primary-dark: #178177;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--bg: #0a0f1e;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--surface: #181e34;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--text: #f7fafc;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--text-secondary: #c4d0e3;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--accent: #10b981;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--danger: #e84a5f;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--border: #22273b;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--card: #141927;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--success: #21e672;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--warning: #fbbc05;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>html,body {margin:0;padding:0;font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>a {color:var(--primary);text-decoration:none;}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>h1,h2,h3 {margin-top:0;}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.wrapper {max-width:1100px;margin:0 auto;}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.navbar {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display:flex;justify-content:space-between;align-items:center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding:24px 0;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.logo {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size:1.75rem;font-weight:700;display:flex;align-items:center;gap:10px;color:var(--primary);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.nav-links a {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color:var(--text-secondary);margin-left:32px;font-size:1rem;font-weight:500;transition:color .2s;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.nav-links a:hover {color:var(--primary);}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.btn {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display:inline-block;padding:13px 34px;border-radius:7px;font-weight:600;font-size:1rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background:var(--primary);color:#fff;transition:background .2s;cursor:pointer;text-align:center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border:none;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.btn:hover {background:var(--primary-dark);}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* HERO */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.hero {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-align:center;padding:90px 20px 40px 20px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background:linear-gradient(135deg,rgba(32,178,170,0.09) 0,rgba(10,15,30,1) 100%);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.hero h1 {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size:2.9rem;font-weight:700;margin:.3em 0 .3em 0;line-height:1.1;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.hero-tagline {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display:inline-block;background:rgba(32,178,170,0.1);color:var(--primary);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight:600;font-size:1.2em;padding:7px 20px;border-radius:99px;letter-spacing:.09em;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.hero-pitch {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size:1.25rem;max-width:580px;margin:28px auto 38px auto;line-height:1.6;color:var(--text-secondary);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.hero-ctas {display:flex;gap:20px;justify-content:center;margin-bottom:40px;}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Badges */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.badges {display:flex;justify-content:center;gap:60px;margin:40px 0 0;flex-wrap:wrap;}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.badge {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background:var(--surface);padding:17px 40px;border-radius:12px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-align:center;box-shadow:0 3px 18px 0 rgba(0,0,0,.07);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.badge-value {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight:700;font-size:1.5rem;color:var(--accent);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.badge-label {font-size:1rem;color:var(--text-secondary);}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* FEATURES */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.features {padding:80px 20px 30px 20px;}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.features-header {text-align:center;margin-bottom:38px;}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.features-header h2 {font-size:2.1rem;}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.features-header p {font-size:1.1rem;color:var(--text-secondary);}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.feature-grid {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:32px;max-width:1000px;margin:0 auto;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.feature-card {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background:var(--card);border-radius:13px;padding:34px 24px;height:100%;text-align:left;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border:1px solid var(--border);transition:border .2s;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.feature-card:hover {border:1px solid var(--primary);}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.feature-icon {font-size:2.3rem;margin-bottom:14px;}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.feature-title {font-size:1.1rem;font-weight:600;margin-bottom:7px;}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.feature-desc {color:var(--text-secondary);font-size:1rem;}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* SOCIAL PROOF */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.proof {background:var(--surface);padding:75px 20px 55px 20px;margin-top:70px;}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.proof-title{text-align:center;font-size:1.2rem;font-weight:600;letter-spacing:.03em;color:var(--primary);}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.testimonial {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>max-width:600px;margin:35px auto 0 auto;background:var(--card);border-radius:12px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border:1px solid var(--border);padding:30px 28px;text-align:left;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.testimonial-text {font-size:1.13rem;color:var(--text-secondary);}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.testimonial-author {margin-top:20px;display:flex;align-items:center;gap:12px;}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.avatar{width:44px;height:44px;border-radius:50%;background:var(--primary);}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.testimonial-info{line-height:1;}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.testimonial-name{font-weight:600;}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.testimonial-title{font-size:.95em;color:var(--text-secondary);}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Demo CTA */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.demo-section {text-align:center;margin:60px 0 0 0;}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.demo-section h2 {font-size:1.52rem;color:var(--primary);margin-bottom:15px;}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* CONTACT */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.contact {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding:80px 20px 80px 20px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>max-width:550px;margin:0 auto;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.contact-title{text-align:center;font-size:1.5em;margin-bottom:5px;}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.contact-desc{text-align:center;color:var(--text-secondary);margin-bottom:30px;}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.contact-form input, .contact-form textarea {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>width:100%;padding:15px 14px;background:var(--card);border:1px solid var(--border);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color:var(--text);font-size:1em;border-radius:6px;margin-bottom:17px;transition:border .2s;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.contact-form input:focus, .contact-form textarea:focus {border:1.5px solid var(--primary);}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.contact-form textarea {min-height:105px;}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.contact-form button {width:100%;margin-top:7px;}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* FOOTER */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.footer {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background:#151b29;padding:35px 10px 11px 10px;text-align:center;margin-top:45px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.footer-logo{font-size:1.25em;font-weight:600;color:var(--primary);}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.footer-links a {color:var(--text-secondary);margin:0 13px;}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.footer-links a:hover{color:var(--primary);}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.copyright{font-size:.91em;color:var(--text-secondary);margin-top:7px;}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>@media (max-width:700px){</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.nav-links{display:none;}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.navbar{padding:19px 6px;}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.hero{padding:55px 5px 30px 5px;}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.features, .proof, .contact{padding:50px 8px;}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.badges{gap:22px;}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.demo-section{margin-top:34px;}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;nav class="navbar wrapper"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="logo"&gt;🤖 BotBridgeOps&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="nav-links"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;a href="#features"&gt;Features&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;a href="#proof"&gt;Customers&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;a href="#demo"&gt;Demo&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;a href="#contact"&gt;Contact&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/nav&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;section class="hero"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="hero-tagline"&gt;Your Tools, Our Intelligence&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h1&gt;AI for Your IT.&lt;br&gt;Seamlessly Integrated.&lt;br&gt;Measurably Better.&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="hero-pitch"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>Plug BotBridgeOps into your current stack. Get 65% faster resolution, 30% lower costs, zero tool migration headaches.&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;b&gt;The easiest way to give your team agentic AI power—no disruption, just outcomes.&lt;/b&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="hero-ctas"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;a href="#contact" class="btn"&gt;Request a Demo&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;a href="demo.html" class="btn" style="background:var(--surface);color:var(--primary);border:1.5px solid var(--primary);"&gt;Live Product Tour&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="badges"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="badge"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="badge-value"&gt;65% Faster&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="badge-label"&gt;Incident Resolution&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="badge"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="badge-value"&gt;30% Saved&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="badge-label"&gt;IT Ops Costs&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="badge"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="badge-value"&gt;98.7% SLA&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="badge-label"&gt;Compliance Achieved&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;section id="features" class="features"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="features-header"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2&gt;Built for Modern IT: Unify, Automate, Optimize&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p&gt;No more tool silos or endless manual work—BotBridgeOps connects the stack you already use, bringing agentic AI to everything.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="feature-grid"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="feature-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="feature-icon"&gt;🚨&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="feature-title"&gt;Incident Management&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="feature-desc"&gt;AI auto-triages, root-cause analysis, and recommends immediate resolution—just approve and go live.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="feature-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="feature-icon"&gt;🎫&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="feature-title"&gt;Ticket Triage &amp; Automation&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="feature-desc"&gt;Automatically classifies, routes, and closes common tickets. Zero bottlenecks, happier end-users.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="feature-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="feature-icon"&gt;🔄&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="feature-title"&gt;Change Management&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="feature-desc"&gt;Risk scoring, CAB speed, and no-surprise tracking for all IT and business changes.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="feature-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="feature-icon"&gt;📦&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="feature-title"&gt;Asset &amp; License Optimization&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="feature-desc"&gt;Find unused tools, automate savings, and get live compliance—without lift-and-shift projects.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="feature-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="feature-icon"&gt;🗺️&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="feature-title"&gt;360° Service Mapping (CSDM)&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="feature-desc"&gt;Real-time dependency views, impact analysis across business, app, and infra layers.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="feature-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="feature-icon"&gt;🛡️&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="feature-title"&gt;SecOps &amp; Compliance&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="feature-desc"&gt;AI threat detection, audit automation, and continuous risk scoring—built in, always up to date.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="feature-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="feature-icon"&gt;🤝&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="feature-title"&gt;Human + AI Collaboration&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="feature-desc"&gt;Your team stays in control. AI suggests, accelerates, and learns—IT keeps the last word.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;section id="proof" class="proof"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="proof-title"&gt;Trusted by IT Teams That Value Outcomes&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="testimonial"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="testimonial-text"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;i&gt;“Integrating BotBridgeOps took less than a week. We now close incidents 2x faster with fewer errors, and the AI saves us on every tool audit. It feels like having an extra IT engineer who never sleeps.”&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="testimonial-author"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="avatar" style="background:#11c1a6;"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="testimonial-info"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="testimonial-name"&gt;Ravi K., IT Ops Lead&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="testimonial-title"&gt;Mid-size Retail Company&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;section class="demo-section" id="demo"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2&gt;Want to Try BotBridgeOps?&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;a class="btn" href="demo.html" style="font-size:1.2em;padding:18px 45px;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>Launch Interactive Demo →</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div style="margin:14px auto 0;color:var(--text-secondary);font-size:1em;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>Experience AI-driven IT health in a real, interactive sample environment.</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;section id="contact" class="contact"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="contact-title"&gt;Request Your Free Pilot&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="contact-desc"&gt;See results in weeks, not months. Just tell us who you are &amp; your top IT headache—we’ll do the rest.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;form class="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;input type="hidden" name="form-name" value="contact"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p style="display:none;"&gt;&lt;label&gt;Don’t fill this out: &lt;input name="bot-field"&gt;&lt;/label&gt;&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;input type="text" name="name" placeholder="Full Name *" required&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;input type="email" name="email" placeholder="Work Email *" required&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;input type="text" name="company" placeholder="Company Name *" required&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;textarea name="message" placeholder="Biggest IT challenge? (Optional)"&gt;&lt;/textarea&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;button type="submit" class="btn"&gt;Send Request&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/form&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;footer class="footer"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="footer-logo"&gt;🤖 BotBridgeOps&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="footer-links"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;a href="#features"&gt;Features&lt;/a&gt;|</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;a href="#proof"&gt;Customers&lt;/a&gt;|</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;a href="#demo"&gt;Demo&lt;/a&gt;|</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;a href="mailto:hello@botbridgeops.com"&gt;Contact&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="copyright"&gt;Copyright &amp;copy; 2025 BotBridgeOps. All rights reserved.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/footer&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
